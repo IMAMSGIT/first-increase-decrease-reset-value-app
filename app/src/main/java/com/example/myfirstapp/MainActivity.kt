@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-       countTextView=findViewById(R.id.countTV) // to find our TextView by id
+       countTextView=findViewById(R.id.countTV) // attached the textview to the button pressed
     }
 
     fun clickToDecrease(view: View) {
