@@ -10,27 +10,30 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
     var count=0 // initialised a variable to increase latter
     private lateinit var countTextView: TextView // created a variable of TextView type
-    override fun onCreate(savedInstanceState: Bundle?) {
+
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
        countTextView=findViewById(R.id.countTV) // to find our TextView by id
     }
 
-    fun clickMe(view: View) {
+    fun clickToDecrease(view: View) {
         count++
-        countTextView.text=count.toString()
-
+        setCount()
     }
 
     fun clickDecrease(view: View) {
         count--
-        countTextView.text=count.toString()
+        setCount()
     }
 
-    fun clickReset(view: View) {
+    fun clickToReset(view: View) {
         count=0
-        countTextView.text=count.toString()
+        setCount()
     }
-
+private fun setCount(){
+    countTextView.text=count.toString()
+}
 
 }
