@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         countTextView=findViewById(R.id.countTV) // attached the textview to the button pressed
         personImage=findViewById(R.id.personIV) // set mipmap image to personImage object
-        personImage.setImageResource(R.drawable.count) // set count image to person image
+        personImage.setImageResource(R.drawable.count) // set count image to personImage object
     }
 
     fun clickToDecrease(view: View) {
