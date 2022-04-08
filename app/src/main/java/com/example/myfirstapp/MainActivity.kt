@@ -11,7 +11,7 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
     var count=0 // initialised a variable to increase latter
     private lateinit var countTextView: TextView // created a variable of TextView type
-    private lateinit var personImage:ImageView
+    private lateinit var personImage:ImageView // created a variable of ImageView type
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
